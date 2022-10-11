@@ -10,7 +10,7 @@ class TestSMAGenerator(TestCase):
         self.assertEqual([56, '4', '-2', '45', '32'], last_5)
 
     def test_convert_readings_to_int(self):
-        readings = [ 56, '4', '-2', '45', '32']
+        readings = [56, '4', '-2', '45', '32']
         readings_in_int = generator.convert_readings_to_int(readings)
         self.assertEqual([56, 4, -2, 45, 32], readings_in_int)
 

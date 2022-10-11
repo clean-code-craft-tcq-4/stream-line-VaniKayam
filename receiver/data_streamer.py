@@ -14,7 +14,6 @@ class Streamer(ReceiverDataHandler):
             print("{}_minimum: {}".format(param, _min))
             print("{}_maximum: {}".format(param, _max))
 
-
     def stream_sma_of_last_five_readings(self):
         for param, readings in self.params_and_readings_dict.items():
             average = average_of_last_five_values(readings)
