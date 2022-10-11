@@ -27,8 +27,8 @@ class ReceiverDataHandler:
     def get_readings_list(data):
         param_1_readings = []
         param_2_readings = []
-        for readings in data[1:]:
-            readings = readings.split(',')
+        for datum in data[1:]:
+            readings = datum.split(',')
             param_1_readings.append(readings[0])
             param_2_readings.append(readings[1])
         return [param_1_readings, param_2_readings]
